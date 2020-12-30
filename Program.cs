@@ -119,7 +119,7 @@ namespace Connect4
         }
 
         // 'Give your Column class a display method that displays each row on a separate line'.
-        public void display()
+        public void Display()
         {
             for (int i = 0; i < this.numRows; i++)
             {
