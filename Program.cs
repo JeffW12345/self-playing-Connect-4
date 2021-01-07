@@ -422,7 +422,8 @@ namespace Connect4
 
     class ConnectFour
     {
-        // Two players playing randomly
+        // Two players playing randomly. I went further than the instructions - the game ends when there is a winner or when the board is full, whichever happens first,
+        // rather than just when the board is full. 
         static void RandomPlay()
         {
             Board board = new Board(6, 7); //row, column
@@ -434,7 +435,6 @@ namespace Connect4
             var rand = new Random();
             Counter p1Counter = new Counter(p1);
             Counter p2Counter = new Counter(p2);
-            Console.WriteLine("Are the two Counter objects equal? " + p1Counter.Equals(p2Counter));
 
             while (!gameOver)
             {
